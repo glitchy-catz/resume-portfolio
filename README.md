@@ -6,6 +6,13 @@
 
 A dynamic and responsive Vue.js application designed to showcase a professional resume and portfolio. This project highlights technical expertise, leadership experience, and proficiency in modern web development frameworks. It features a clean, accessible design with sections for a summary, core competencies, professional experience, education, and awards. The application dynamically renders content from a Markdown file, ensuring easy updates and scalability.
 
+## 🌐 Live Project URL
+
+[Resume Portfolio](https://resume-portfolio-git-main-glitchy-catzs-projects.vercel.app/)
+
+Visit the live project to explore the dynamic resume.
+
+
 ## ✨ Features
 
 - **Dynamic Resume Rendering**: Content is dynamically loaded from a Markdown file (`README.md`) for easy updates.
