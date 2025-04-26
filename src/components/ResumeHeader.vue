@@ -16,7 +16,7 @@
     <div class="contact-links">
       <p>
         <a class="contact-link" :href="`tel:${headerData.phone}`" aria-label="Call the developer">{{ headerData.phone }}</a> | 
-        <a class="contact-link" :href="headerData.linkedinUrl" target="_blank" aria-label="Visit LinkedIn profile">LinkedIn</a> | 
+        <a class="contact-link" :href="headerData['linked-in']" target="_blank" aria-label="Visit LinkedIn profile">LinkedIn</a> | 
         <a class="contact-link" :href="`mailto:${headerData.email}`" aria-label="Send an email">{{ headerData.email }}</a>
       </p>
     </div>

@@ -90,7 +90,6 @@ export default {
 
        const htmlContent = marked(rawMarkdown);
         parsedMarkdown.value = htmlContent;
-
         headerData.value = {
           name: extractData(rawMarkdown, /<h1 id="name">(.*?)<\/h1>/),
           title: extractData(rawMarkdown, /<p id="title">(.*?)<\/p>/),
@@ -98,9 +97,10 @@ export default {
           profileAlt: 'Profile Picture',
           phone: extractData(rawMarkdown, /<a id="phone" .*?>(.*?)<\/a>/),
           email: extractData(rawMarkdown, /<a id="email" .*?mailto:(.*?)".*?>.*?<\/a>/),
-          ['linked-in']: extractData(rawMarkdown, /<a id="linked-in" .*?href="(.*?)".*?>.*?<\/a>/),
+          ['linked-in']: extractData(rawMarkdown, /<a\s+[^>]*id=["']linked-in["'][^>]*href=["']([^"']+)["']/), // Updated regex
         };
       
+      console.log("headerData", headerData);
         headings.value = extractHeadings(htmlContent);
 
       } catch (e) {
